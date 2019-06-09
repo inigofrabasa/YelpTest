@@ -14,8 +14,12 @@
 		143C85F522AD64E100EB0D82 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85F422AD64E100EB0D82 /* HTTPClient.swift */; };
 		143C85F722AD65E700EB0D82 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85F622AD65E700EB0D82 /* LibraryAPI.swift */; };
 		143C85F922AD675D00EB0D82 /* Reachbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85F822AD675D00EB0D82 /* Reachbility.swift */; };
-		143C85FC22AD67B100EB0D82 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85FB22AD67B100EB0D82 /* DemoViewController.swift */; };
 		143C85FF22AD69D900EB0D82 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85FE22AD69D900EB0D82 /* ProgressView.swift */; };
+		143C860322AD73EF00EB0D82 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C860222AD73EF00EB0D82 /* Business.swift */; };
+		143C860522AD76A100EB0D82 /* SearchBusinessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C860422AD76A100EB0D82 /* SearchBusinessResponse.swift */; };
+		143C860722AD7A7000EB0D82 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C860622AD7A7000EB0D82 /* Utility.swift */; };
+		143C860B22AD7C7500EB0D82 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C860A22AD7C7500EB0D82 /* LandingPageViewController.swift */; };
+		143C860D22AD7F6C00EB0D82 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C860C22AD7F6C00EB0D82 /* BusinessCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +32,12 @@
 		143C85F422AD64E100EB0D82 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		143C85F622AD65E700EB0D82 /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		143C85F822AD675D00EB0D82 /* Reachbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachbility.swift; sourceTree = "<group>"; };
-		143C85FB22AD67B100EB0D82 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		143C85FE22AD69D900EB0D82 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		143C860222AD73EF00EB0D82 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		143C860422AD76A100EB0D82 /* SearchBusinessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBusinessResponse.swift; sourceTree = "<group>"; };
+		143C860622AD7A7000EB0D82 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		143C860A22AD7C7500EB0D82 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		143C860C22AD7F6C00EB0D82 /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +96,8 @@
 		143C85FA22AD678700EB0D82 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
-				143C85FB22AD67B100EB0D82 /* DemoViewController.swift */,
+				143C860A22AD7C7500EB0D82 /* LandingPageViewController.swift */,
+				143C860C22AD7F6C00EB0D82 /* BusinessCell.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -97,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				143C85FE22AD69D900EB0D82 /* ProgressView.swift */,
+				143C860622AD7A7000EB0D82 /* Utility.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -104,6 +114,8 @@
 		143C860122AD735600EB0D82 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				143C860222AD73EF00EB0D82 /* Business.swift */,
+				143C860422AD76A100EB0D82 /* SearchBusinessResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,12 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143C860522AD76A100EB0D82 /* SearchBusinessResponse.swift in Sources */,
 				143C85F922AD675D00EB0D82 /* Reachbility.swift in Sources */,
+				143C860722AD7A7000EB0D82 /* Utility.swift in Sources */,
 				143C85F522AD64E100EB0D82 /* HTTPClient.swift in Sources */,
+				143C860322AD73EF00EB0D82 /* Business.swift in Sources */,
+				143C860D22AD7F6C00EB0D82 /* BusinessCell.swift in Sources */,
+				143C860B22AD7C7500EB0D82 /* LandingPageViewController.swift in Sources */,
 				143C85FF22AD69D900EB0D82 /* ProgressView.swift in Sources */,
 				143C85E122AD5BCB00EB0D82 /* AppDelegate.swift in Sources */,
 				143C85F722AD65E700EB0D82 /* LibraryAPI.swift in Sources */,
-				143C85FC22AD67B100EB0D82 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
