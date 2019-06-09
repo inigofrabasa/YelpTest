@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  YelpTest
 //
-//  Created by Emmanuel Casañas Cruz on 6/9/19.
+//  Created by Iñigo Flores Rabasa on 6/9/19.
 //  Copyright © 2019 Iñigo Flores Rabasa. All rights reserved.
 //
 
