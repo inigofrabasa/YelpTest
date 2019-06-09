@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		143C85C622AD5A7200EB0D82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85C522AD5A7200EB0D82 /* AppDelegate.swift */; };
-		143C85C822AD5A7200EB0D82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85C722AD5A7200EB0D82 /* ViewController.swift */; };
-		143C85CB22AD5A7200EB0D82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143C85C922AD5A7200EB0D82 /* Main.storyboard */; };
-		143C85CD22AD5A7400EB0D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143C85CC22AD5A7400EB0D82 /* Assets.xcassets */; };
+		143C85E122AD5BCB00EB0D82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85E022AD5BCB00EB0D82 /* AppDelegate.swift */; };
+		143C85E322AD5BCB00EB0D82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C85E222AD5BCB00EB0D82 /* ViewController.swift */; };
+		143C85E622AD5BCB00EB0D82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143C85E422AD5BCB00EB0D82 /* Main.storyboard */; };
+		143C85E822AD5BCC00EB0D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143C85E722AD5BCC00EB0D82 /* Assets.xcassets */; };
+		143C85EB22AD5BCC00EB0D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143C85E922AD5BCC00EB0D82 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		143C85C222AD5A7200EB0D82 /* YelpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		143C85C522AD5A7200EB0D82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		143C85C722AD5A7200EB0D82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		143C85CA22AD5A7200EB0D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		143C85CC22AD5A7400EB0D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		143C85CE22AD5A7400EB0D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143C85DD22AD5BCB00EB0D82 /* YelpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		143C85E022AD5BCB00EB0D82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		143C85E222AD5BCB00EB0D82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		143C85E522AD5BCB00EB0D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		143C85E722AD5BCC00EB0D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		143C85EA22AD5BCC00EB0D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		143C85EC22AD5BCC00EB0D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		143C85BF22AD5A7200EB0D82 /* Frameworks */ = {
+		143C85DA22AD5BCB00EB0D82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,30 +35,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		143C85B922AD5A7200EB0D82 = {
+		143C85D422AD5BCB00EB0D82 = {
 			isa = PBXGroup;
 			children = (
-				143C85C422AD5A7200EB0D82 /* YelpTest */,
-				143C85C322AD5A7200EB0D82 /* Products */,
+				143C85DF22AD5BCB00EB0D82 /* YelpTest */,
+				143C85DE22AD5BCB00EB0D82 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		143C85C322AD5A7200EB0D82 /* Products */ = {
+		143C85DE22AD5BCB00EB0D82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				143C85C222AD5A7200EB0D82 /* YelpTest.app */,
+				143C85DD22AD5BCB00EB0D82 /* YelpTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		143C85C422AD5A7200EB0D82 /* YelpTest */ = {
+		143C85DF22AD5BCB00EB0D82 /* YelpTest */ = {
 			isa = PBXGroup;
 			children = (
-				143C85C522AD5A7200EB0D82 /* AppDelegate.swift */,
-				143C85C722AD5A7200EB0D82 /* ViewController.swift */,
-				143C85C922AD5A7200EB0D82 /* Main.storyboard */,
-				143C85CC22AD5A7400EB0D82 /* Assets.xcassets */,
-				143C85CE22AD5A7400EB0D82 /* Info.plist */,
+				143C85E022AD5BCB00EB0D82 /* AppDelegate.swift */,
+				143C85E222AD5BCB00EB0D82 /* ViewController.swift */,
+				143C85E422AD5BCB00EB0D82 /* Main.storyboard */,
+				143C85E722AD5BCC00EB0D82 /* Assets.xcassets */,
+				143C85E922AD5BCC00EB0D82 /* LaunchScreen.storyboard */,
+				143C85EC22AD5BCC00EB0D82 /* Info.plist */,
 			);
 			path = YelpTest;
 			sourceTree = "<group>";
@@ -64,13 +67,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		143C85C122AD5A7200EB0D82 /* YelpTest */ = {
+		143C85DC22AD5BCB00EB0D82 /* YelpTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 143C85D122AD5A7400EB0D82 /* Build configuration list for PBXNativeTarget "YelpTest" */;
+			buildConfigurationList = 143C85EF22AD5BCC00EB0D82 /* Build configuration list for PBXNativeTarget "YelpTest" */;
 			buildPhases = (
-				143C85BE22AD5A7200EB0D82 /* Sources */,
-				143C85BF22AD5A7200EB0D82 /* Frameworks */,
-				143C85C022AD5A7200EB0D82 /* Resources */,
+				143C85D922AD5BCB00EB0D82 /* Sources */,
+				143C85DA22AD5BCB00EB0D82 /* Frameworks */,
+				143C85DB22AD5BCB00EB0D82 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -78,25 +81,25 @@
 			);
 			name = YelpTest;
 			productName = YelpTest;
-			productReference = 143C85C222AD5A7200EB0D82 /* YelpTest.app */;
+			productReference = 143C85DD22AD5BCB00EB0D82 /* YelpTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		143C85BA22AD5A7200EB0D82 /* Project object */ = {
+		143C85D522AD5BCB00EB0D82 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Iñigo Flores Rabasa";
 				TargetAttributes = {
-					143C85C122AD5A7200EB0D82 = {
+					143C85DC22AD5BCB00EB0D82 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 143C85BD22AD5A7200EB0D82 /* Build configuration list for PBXProject "YelpTest" */;
+			buildConfigurationList = 143C85D822AD5BCB00EB0D82 /* Build configuration list for PBXProject "YelpTest" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,53 +107,62 @@
 				en,
 				Base,
 			);
-			mainGroup = 143C85B922AD5A7200EB0D82;
-			productRefGroup = 143C85C322AD5A7200EB0D82 /* Products */;
+			mainGroup = 143C85D422AD5BCB00EB0D82;
+			productRefGroup = 143C85DE22AD5BCB00EB0D82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				143C85C122AD5A7200EB0D82 /* YelpTest */,
+				143C85DC22AD5BCB00EB0D82 /* YelpTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		143C85C022AD5A7200EB0D82 /* Resources */ = {
+		143C85DB22AD5BCB00EB0D82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143C85CD22AD5A7400EB0D82 /* Assets.xcassets in Resources */,
-				143C85CB22AD5A7200EB0D82 /* Main.storyboard in Resources */,
+				143C85EB22AD5BCC00EB0D82 /* LaunchScreen.storyboard in Resources */,
+				143C85E822AD5BCC00EB0D82 /* Assets.xcassets in Resources */,
+				143C85E622AD5BCB00EB0D82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		143C85BE22AD5A7200EB0D82 /* Sources */ = {
+		143C85D922AD5BCB00EB0D82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143C85C822AD5A7200EB0D82 /* ViewController.swift in Sources */,
-				143C85C622AD5A7200EB0D82 /* AppDelegate.swift in Sources */,
+				143C85E322AD5BCB00EB0D82 /* ViewController.swift in Sources */,
+				143C85E122AD5BCB00EB0D82 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		143C85C922AD5A7200EB0D82 /* Main.storyboard */ = {
+		143C85E422AD5BCB00EB0D82 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				143C85CA22AD5A7200EB0D82 /* Base */,
+				143C85E522AD5BCB00EB0D82 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		143C85E922AD5BCC00EB0D82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143C85EA22AD5BCC00EB0D82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		143C85CF22AD5A7400EB0D82 /* Debug */ = {
+		143C85ED22AD5BCC00EB0D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -182,6 +194,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -200,17 +213,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = appletvos;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 12.2;
 			};
 			name = Debug;
 		};
-		143C85D022AD5A7400EB0D82 /* Release */ = {
+		143C85EE22AD5BCC00EB0D82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,6 +255,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -254,21 +268,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = appletvos;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				TVOS_DEPLOYMENT_TARGET = 12.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		143C85D222AD5A7400EB0D82 /* Debug */ = {
+		143C85F022AD5BCC00EB0D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G78WA842RT;
 				INFOPLIST_FILE = YelpTest/Info.plist;
@@ -279,15 +292,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.inigo.f.YelpTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		143C85D322AD5A7400EB0D82 /* Release */ = {
+		143C85F122AD5BCC00EB0D82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G78WA842RT;
 				INFOPLIST_FILE = YelpTest/Info.plist;
@@ -298,32 +310,32 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.inigo.f.YelpTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		143C85BD22AD5A7200EB0D82 /* Build configuration list for PBXProject "YelpTest" */ = {
+		143C85D822AD5BCB00EB0D82 /* Build configuration list for PBXProject "YelpTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				143C85CF22AD5A7400EB0D82 /* Debug */,
-				143C85D022AD5A7400EB0D82 /* Release */,
+				143C85ED22AD5BCC00EB0D82 /* Debug */,
+				143C85EE22AD5BCC00EB0D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		143C85D122AD5A7400EB0D82 /* Build configuration list for PBXNativeTarget "YelpTest" */ = {
+		143C85EF22AD5BCC00EB0D82 /* Build configuration list for PBXNativeTarget "YelpTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				143C85D222AD5A7400EB0D82 /* Debug */,
-				143C85D322AD5A7400EB0D82 /* Release */,
+				143C85F022AD5BCC00EB0D82 /* Debug */,
+				143C85F122AD5BCC00EB0D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 143C85BA22AD5A7200EB0D82 /* Project object */;
+	rootObject = 143C85D522AD5BCB00EB0D82 /* Project object */;
 }
