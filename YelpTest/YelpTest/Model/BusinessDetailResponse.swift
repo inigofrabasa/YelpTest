@@ -1,5 +1,5 @@
 //
-//  SearchBusinessResponse.swift
+//  BusinessDetailResponse.swift
 //  YelpTest
 //
 //  Created by Iñigo Flores Rabasa on 6/9/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchBusinessResponse: NSObject {
+class BusinessDetailResponse: NSObject {
     var busisess : [Business]
     var total : Int
     
@@ -16,5 +16,8 @@ class SearchBusinessResponse: NSObject {
         busisess = Utility.getArrayOfBusiness(dictionary: dictionary["businesses"] as! [Dictionary<String, AnyObject>])
         total = dictionary["total"] as? Int ?? 0
     }
-  
+    
 }
+
+
+import Foundation

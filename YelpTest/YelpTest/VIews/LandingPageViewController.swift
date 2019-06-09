@@ -13,7 +13,7 @@ private let reuseIdentifier = "BusinessCell"
 class LandingPageViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var businessArray : [Business]?
-
+    var selectedBusiness: Business?
     override func viewDidLoad() {
         super.viewDidLoad()
         getBusinessInfo()
@@ -58,44 +58,35 @@ class LandingPageViewController: UICollectionViewController, UICollectionViewDel
 
     // MARK: UICollectionViewDelegate
     
-    
- 
-
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenSize: CGRect = UIScreen.main.bounds
         let screenWidth = screenSize.width
-        //let screenHeight = screenSize.height
         
-        return CGSize(width: 150, height: 230)
+        return indexPath.row % 3 == 0 ? CGSize(width: screenWidth - 40 , height: 230) :  CGSize(width: 150, height: 230)
     }
     
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let business = businessArray![indexPath.row]
+        getDetailForBusiness(idBusiness: business.id)
     }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    func getDetailForBusiness(idBusiness:String){
+        ProgressView.shared.showProgressView()
+        LibraryAPI.sharedInstance.getDetailForBusinees(id: idBusiness, Success: { (response) in
+            self.selectedBusiness = response
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "goToDetail", sender: response)
+            }
+        }) { (error) in
+            debugPrint("Something wrong happen")
+        }
+          ProgressView.shared.hideProgressView()
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailTableViewController{
+            destination.currentBussines =  self.selectedBusiness
+        }
+    }
 
 }

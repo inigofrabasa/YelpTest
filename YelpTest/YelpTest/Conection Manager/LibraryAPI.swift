@@ -19,7 +19,19 @@ class LibraryAPI {
         HTTPClient.sharedInstance.params = params as Dictionary<String, AnyObject>
         HTTPClient.sharedInstance.doRequest(method: "businesses/search", type: "GET", parameters: [:], onSuccess: {(data) in
             let responseData = SearchBusinessResponse(dictionary: data)
-                onSuccess(responseData )
+                onSuccess(responseData)
+        }, onError: {(error) in
+            onError(error.description)
+            debugPrint(error.description)
+        })
+    }
+    
+    func getDetailForBusinees(id:String, Success onSuccess:@escaping (Business) -> (), onError: @escaping (String) -> ()) {
+   
+        HTTPClient.sharedInstance.params = nil
+        HTTPClient.sharedInstance.doRequest(method: "businesses/" + id , type: "GET", parameters: [:], onSuccess: {(data) in
+            let responseData = Business(dictionary: data)
+            onSuccess(responseData)
         }, onError: {(error) in
             onError(error.description)
             debugPrint(error.description)
