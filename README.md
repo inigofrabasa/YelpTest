@@ -1,6 +1,6 @@
 # YelpTest
 
-Simple App Demo to complete code challengue
+Simple App Demo to complete code challenge
 
 Requirements :
 
