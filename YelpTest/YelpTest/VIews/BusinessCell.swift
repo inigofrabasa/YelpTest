@@ -34,6 +34,14 @@ class BusinessCell: UICollectionViewCell {
         statusIndicator.backgroundColor = color
     }
     
+    override func prepareForReuse() {
+        businessImage.image = nil
+        nameLabel.text = ""
+        ratingLabel.text = ""
+        priceLabel.text = ""
+        phoneLabel.text = ""
+    }
+    
 }
 
 extension UIImageView {

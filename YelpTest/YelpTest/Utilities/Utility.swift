@@ -41,5 +41,16 @@ public class Utility {
         mapview.setRegion(region, animated: true)
     
     }
+
+    class func getValueForTag(tag:Int) -> String {
+        switch tag {
+        case 1:
+            return "Bar"
+        case 2:
+            return "Coffee"
+        default:
+            return "Food"
+        }
+    }
     
 }

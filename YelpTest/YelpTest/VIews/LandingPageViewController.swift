@@ -9,21 +9,22 @@
 import UIKit
 
 private let reuseIdentifier = "BusinessCell"
+private let collectionViewHeaderFooterReuseIdentifier = "HeaderView"
 
-class LandingPageViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+
+class LandingPageViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout,headerDelegate {
     
     var businessArray : [Business]?
     var selectedBusiness: Business?
     override func viewDidLoad() {
         super.viewDidLoad()
-        getBusinessInfo()
+        getBusinessInfo(term: "Beer")
     }
     
-    
-    
-    func getBusinessInfo(){
+    func getBusinessInfo(term:String){
+        self.title = term
         ProgressView.shared.showProgressView()
-        LibraryAPI.sharedInstance.searchBusinessesBy(term: "food", Success: { (response) in
+        LibraryAPI.sharedInstance.searchBusinessesBy(term: term, Success: { (response) in
             ProgressView.shared.hideProgressView()
             self.businessArray = response.busisess
             DispatchQueue.main.async {
@@ -49,10 +50,10 @@ class LandingPageViewController: UICollectionViewController, UICollectionViewDel
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //TODO: avoid force unwraping with guard let
-        let currentBusiness = businessArray![indexPath.row]
+        guard let currentBusiness = businessArray else { return UICollectionViewCell() }
+        let businessChoosen = currentBusiness[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! BusinessCell
-        cell.configure(with: currentBusiness)
+        cell.configure(with: businessChoosen)
         return cell
     }
 
@@ -69,6 +70,22 @@ class LandingPageViewController: UICollectionViewController, UICollectionViewDel
         let business = businessArray![indexPath.row]
         getDetailForBusiness(idBusiness: business.id)
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        switch kind {
+            
+        case UICollectionView.elementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: collectionViewHeaderFooterReuseIdentifier, for: indexPath) as! HeaderView
+            headerView.delegate = self
+            
+            return headerView
+            
+        default:
+            assert(false, "Unexpected element kind")
+        }
+    }
+
     
     func getDetailForBusiness(idBusiness:String){
         ProgressView.shared.showProgressView()
@@ -87,6 +104,12 @@ class LandingPageViewController: UICollectionViewController, UICollectionViewDel
         if let destination = segue.destination as? DetailTableViewController{
             destination.currentBussines =  self.selectedBusiness
         }
+    }
+    
+    //MARK: HeaderDelegate
+    
+    func buttonClicked(_ value: String) {
+        getBusinessInfo(term: value)
     }
 
 }
