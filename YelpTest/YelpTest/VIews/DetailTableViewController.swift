@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import MapKit
 
 class DetailTableViewController: UITableViewController {
     
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
+    
     var currentBussines:Business?
 
     override func viewDidLoad() {
@@ -20,12 +27,20 @@ class DetailTableViewController: UITableViewController {
     }
     
     func setupViewDetails(){
-        guard let bussines = currentBussines  else {
+        guard let business = currentBussines  else {
             return
         }
-        detailImage.downloaded(from: bussines.image)
-        titleLabel.text = bussines.name
+        detailImage.downloaded(from: business.image)
+        titleLabel.text = business.name
+        ratingLabel.text = "Rating: \(business.rating) with: \(business.reviewCount) reviews"
+        priceLabel.text = business.price
+        Utility.setStatusLabel(label: statusLabel, isClosed: business.isClose)
+        phoneLabel.text = business.displayPhone
+        tableView.tableFooterView = UIView()
+        Utility.setupMapView(mapview: mapView, locationData: business.coordinates)
     }
+    
+    
 
 
 }

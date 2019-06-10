@@ -22,6 +22,7 @@ class Business: NSObject {
     var website : String
     var reviewCount: Int
     var photos : [String]
+    var coordinates : Coordinate
     
     init(dictionary: Dictionary<String, AnyObject>) {
         id = dictionary["id"] as? String ?? ""
@@ -37,5 +38,6 @@ class Business: NSObject {
         website = dictionary["url"] as? String ?? ""
         reviewCount = dictionary["review_count"] as? Int ?? 0
         photos = dictionary["photos"] as? [String]  ?? []
+        coordinates = Coordinate(dictionary: dictionary["coordinates"] as! Dictionary<String, AnyObject>)
     }
 }

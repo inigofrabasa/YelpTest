@@ -22,6 +22,7 @@
 		143C860D22AD7F6C00EB0D82 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C860C22AD7F6C00EB0D82 /* BusinessCell.swift */; };
 		143C860F22ADAE4900EB0D82 /* BusinessDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C860E22ADAE4900EB0D82 /* BusinessDetailResponse.swift */; };
 		143C861122ADBA6100EB0D82 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C861022ADBA6100EB0D82 /* DetailTableViewController.swift */; };
+		143C861322ADF99600EB0D82 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C861222ADF99600EB0D82 /* Coordinate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		143C860C22AD7F6C00EB0D82 /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 		143C860E22ADAE4900EB0D82 /* BusinessDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailResponse.swift; sourceTree = "<group>"; };
 		143C861022ADBA6100EB0D82 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		143C861222ADF99600EB0D82 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				143C860222AD73EF00EB0D82 /* Business.swift */,
 				143C860422AD76A100EB0D82 /* SearchBusinessResponse.swift */,
 				143C860E22ADAE4900EB0D82 /* BusinessDetailResponse.swift */,
+				143C861222ADF99600EB0D82 /* Coordinate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				143C860D22AD7F6C00EB0D82 /* BusinessCell.swift in Sources */,
 				143C860B22AD7C7500EB0D82 /* LandingPageViewController.swift in Sources */,
 				143C860F22ADAE4900EB0D82 /* BusinessDetailResponse.swift in Sources */,
+				143C861322ADF99600EB0D82 /* Coordinate.swift in Sources */,
 				143C85FF22AD69D900EB0D82 /* ProgressView.swift in Sources */,
 				143C85E122AD5BCB00EB0D82 /* AppDelegate.swift in Sources */,
 				143C85F722AD65E700EB0D82 /* LibraryAPI.swift in Sources */,
